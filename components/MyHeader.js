@@ -33,7 +33,7 @@ export default class MyHeader extends Component {
           type="font-awesome"
           color="#696969"
           size={25}
-          onPress={() => this.props.navigation.navigate("Notification")}
+          onPress={() => this.props.navigation.navigate("Notifications")}
         />
         <Badge
           value={this.state.value}

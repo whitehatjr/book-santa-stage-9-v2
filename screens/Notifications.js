@@ -20,7 +20,8 @@ export default class NotificationScreen extends Component {
 
   getNotifications = () => {
     const { userId } = this.state;
-    this.requestRef = db
+
+    this.notificationRef = db
       .collection("all_notifications")
       .where("notification_status", "==", "unread")
       .where("targeted_user_id", "==", userId)
